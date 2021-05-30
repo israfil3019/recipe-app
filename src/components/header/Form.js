@@ -1,37 +1,34 @@
-import { useRef } from "react";
+import React from "react";
+import { Button, FoodInput, FormContainer, Select } from "./headerStyle";
 
-function Form({ myQuery }) {
-  const search = useRef();
-  const type = useRef();
+const Form = ({ setQuery, query, getData, mealTypes, meal, setMeal }) => {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    getData();
+  };
+
   return (
-    <div>
-      <form className="d-flex">
-        <input
-          className="form-control"
-          ref={search}
-          type="search"
-          name="search"
-        />
-
-        <button
-          type="button"
-          className="btn btn-secondary"
-          onClick={() => {
-            myQuery(search.current.value, type.current.value);
-          }}
-        >
-          Search
-        </button>
-
-        <select className="custom-select" ref={type}>
-          <option value="1">Breakfast</option>
-          <option value="2">One</option>
-          <option value="3">Two</option>
-          <option value="4">Three</option>
-        </select>
-      </form>
-    </div>
+    <FormContainer onSubmit={handleSubmit}>
+      <FoodInput
+        type="text"
+        placeholder="Search"
+        value={query}
+        onChange={(e) => setQuery(e.target.value)}
+      />
+      <Button>Search</Button>
+      <Select
+        name="mealTypes"
+        id="mealTypes"
+        onChange={(e) => setMeal(e.target.value)}
+      >
+        {mealTypes?.map((item) => (
+          <option value={item.toLowerCase()} key={item}>
+            {item}
+          </option>
+        ))}
+      </Select>
+    </FormContainer>
   );
-}
+};
 
 export default Form;

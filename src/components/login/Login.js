@@ -1,31 +1,36 @@
-import { useRef } from "react";
+import React from "react";
+import { useHistory } from "react-router-dom";
+import {
+  LoginContainer,
+  FormContainer,
+  Header,
+  StyledInput,
+  StyledForm,
+  StyledButton,
+  StyledImg,
+} from "./loginStyle";
+import mealSvg from "../../assets/meal2.svg";
 
-const Login = () => {
-  const userName = useRef();
-  const password = useRef();
+const Login = ({ setAuth, auth }) => {
+  let history = useHistory();
+
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    setAuth(!auth);
+    history.push("/");
+  };
   return (
-    <div>
-      <form>
-        <input
-          className="form-control"
-          ref={userName}
-          type="text"
-          name="userName"
-          placeholder="User Name"
-        />
-        <input
-          type="password"
-          ref={password}
-          className="form-control"
-          name="password"
-          placeholder="Password"
-        />
-
-        <button type="submit" className="btn btn-primary">
-          Login
-        </button>
-      </form>
-    </div>
+    <LoginContainer>
+      <FormContainer>
+        <StyledImg src={mealSvg} alt="meal" />
+        <Header>My Way/Recipe</Header>
+        <StyledForm onSubmit={handleSubmit}>
+          <StyledInput type="text" placeholder="Username" required />
+          <StyledInput type="password" placeholder="Password" required />
+          <StyledButton type="submit">Login</StyledButton>
+        </StyledForm>
+      </FormContainer>
+    </LoginContainer>
   );
 };
 
