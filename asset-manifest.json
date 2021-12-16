@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/recipe-app/static/css/main.513651c9.chunk.css",
-    "main.js": "/recipe-app/static/js/main.d60a1b77.chunk.js",
-    "main.js.map": "/recipe-app/static/js/main.d60a1b77.chunk.js.map",
-    "runtime-main.js": "/recipe-app/static/js/runtime-main.70250395.js",
-    "runtime-main.js.map": "/recipe-app/static/js/runtime-main.70250395.js.map",
-    "static/js/2.9ee28997.chunk.js": "/recipe-app/static/js/2.9ee28997.chunk.js",
-    "static/js/2.9ee28997.chunk.js.map": "/recipe-app/static/js/2.9ee28997.chunk.js.map",
-    "static/js/3.2274f2e3.chunk.js": "/recipe-app/static/js/3.2274f2e3.chunk.js",
-    "static/js/3.2274f2e3.chunk.js.map": "/recipe-app/static/js/3.2274f2e3.chunk.js.map",
+    "main.css": "/recipe-app/static/css/main.5c007e73.chunk.css",
+    "main.js": "/recipe-app/static/js/main.a18d8722.chunk.js",
+    "main.js.map": "/recipe-app/static/js/main.a18d8722.chunk.js.map",
+    "runtime-main.js": "/recipe-app/static/js/runtime-main.d61c68f1.js",
+    "runtime-main.js.map": "/recipe-app/static/js/runtime-main.d61c68f1.js.map",
+    "static/js/2.337fc361.chunk.js": "/recipe-app/static/js/2.337fc361.chunk.js",
+    "static/js/2.337fc361.chunk.js.map": "/recipe-app/static/js/2.337fc361.chunk.js.map",
     "index.html": "/recipe-app/index.html",
-    "static/css/main.513651c9.chunk.css.map": "/recipe-app/static/css/main.513651c9.chunk.css.map",
-    "static/js/2.9ee28997.chunk.js.LICENSE.txt": "/recipe-app/static/js/2.9ee28997.chunk.js.LICENSE.txt",
-    "static/media/logo.6ce24c58.svg": "/recipe-app/static/media/logo.6ce24c58.svg"
+    "static/css/main.5c007e73.chunk.css.map": "/recipe-app/static/css/main.5c007e73.chunk.css.map",
+    "static/js/2.337fc361.chunk.js.LICENSE.txt": "/recipe-app/static/js/2.337fc361.chunk.js.LICENSE.txt",
+    "static/media/coding.0ee2fc3a.svg": "/recipe-app/static/media/coding.0ee2fc3a.svg",
+    "static/media/diet.2f19967b.svg": "/recipe-app/static/media/diet.2f19967b.svg",
+    "static/media/home.1df754a9.svg": "/recipe-app/static/media/home.1df754a9.svg",
+    "static/media/meal2.8b3981f1.svg": "/recipe-app/static/media/meal2.8b3981f1.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.70250395.js",
-    "static/js/2.9ee28997.chunk.js",
-    "static/css/main.513651c9.chunk.css",
-    "static/js/main.d60a1b77.chunk.js"
+    "static/js/runtime-main.d61c68f1.js",
+    "static/js/2.337fc361.chunk.js",
+    "static/css/main.5c007e73.chunk.css",
+    "static/js/main.a18d8722.chunk.js"
   ]
 }
